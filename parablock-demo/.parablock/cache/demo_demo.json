@@ -1,0 +1,14 @@
+{
+  "demo.demo.hello_world": {
+    "hash": "22b205f97563354f0f5b51bdc058e730",
+    "implementation": "print(\"Hello, World!\")"
+  },
+  "demo.demo.get_greeting": {
+    "hash": "abe67a7715839e201da2d3dd0f02d58d",
+    "implementation": "if not name:\n    return \"Hello, Guest!\"\nelse:\n    return f\"Hello, {name}!\""
+  },
+  "demo.demo.get_goodbye": {
+    "hash": "b4c43d841f6341c34e65f5bf33788bbc",
+    "implementation": "return f\"Goodbye, {name}!\""
+  }
+}

@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "parablock"
+version = "0.1.0"
+description = "A Python library for natural language defined functions"
+authors = ["contact@ericdudley.com"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+watchdog = "^2.3.1"
+openai = "^0.28.0"
+importlib-metadata = "^6.0.0"
+rich = "^13.3.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3.1"
+black = "^23.3.0"
+isort = "^5.12.0"
+pylint = "^2.17.4"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.pylint.messages_control]
+disable = [
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "missing-function-docstring",
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
